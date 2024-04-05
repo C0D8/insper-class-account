@@ -3,11 +3,8 @@ package insper.classroom.account;
 import lombok.Builder;
 import lombok.experimental.Accessors;
 
-@Builder 
-@Accessors(chain = true, fluent = true)
-public record AuthIn(
+@Builder @Accessors(fluent = true, chain = true)
+public record LoginIn(
     String email,
-    String password) {
-
-    
-}
+    String password
+) { }
