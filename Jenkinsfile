@@ -1,15 +1,16 @@
-pipeline {
+pipeline{
     agent any
-    stages {
-        stage('Jenkins Account') {
-            steps {
-                echo 'Jenkins Account'
+    stages{
+        stage('Jenkis Account'){
+            steps{
+                echo 'Jankins account interface'
             }
         }
-        stage('Build') { 
-            steps {
+        stage('Build'){
+            steps{
                 sh 'mvn clean install'
             }
-        }      
+        }
+       
     }
 }
